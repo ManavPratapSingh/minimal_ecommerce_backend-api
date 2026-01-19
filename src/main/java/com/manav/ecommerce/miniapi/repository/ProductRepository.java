@@ -1,6 +1,6 @@
-package com.manav.ecommerce.repository;
+package com.manav.ecommerce.miniapi.repository;
 
-import com.manav.ecommerce.model.Product;
+import com.manav.ecommerce.miniapi.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package com.manav.ecommerce.controller;
+package com.manav.ecommerce.miniapi.controller;
 
-import com.manav.ecommerce.model.Product;
-import com.manav.ecommerce.service.ProductService;
+import com.manav.ecommerce.miniapi.model.Product;
+import com.manav.ecommerce.miniapi.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

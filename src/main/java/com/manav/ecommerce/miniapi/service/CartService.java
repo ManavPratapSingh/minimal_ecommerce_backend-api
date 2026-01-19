@@ -1,6 +1,6 @@
-package com.manav.ecommerce.service;
+package com.manav.ecommerce.miniapi.service;
 
-import com.manav.ecommerce.model.CartItem;
+import com.manav.ecommerce.miniapi.model.CartItem;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;

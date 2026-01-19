@@ -1,4 +1,4 @@
-package com.manav.ecommerce.model;
+package com.manav.ecommerce.miniapi.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

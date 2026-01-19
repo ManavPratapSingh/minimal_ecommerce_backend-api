@@ -1,9 +1,9 @@
-package com.manav.ecommerce.service;
+package com.manav.ecommerce.miniapi.service;
 
-import com.manav.ecommerce.model.Category;
-import com.manav.ecommerce.model.Product;
-import com.manav.ecommerce.repository.CategoryRepository;
-import com.manav.ecommerce.repository.ProductRepository;
+import com.manav.ecommerce.miniapi.model.Category;
+import com.manav.ecommerce.miniapi.model.Product;
+import com.manav.ecommerce.miniapi.repository.CategoryRepository;
+import com.manav.ecommerce.miniapi.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

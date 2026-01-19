@@ -1,5 +1,6 @@
-package com.manav.ecommerce.config;
+package com.manav.ecommerce.miniapi.config;
 
+import com.manav.ecommerce.miniapi.model.CartItem;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
