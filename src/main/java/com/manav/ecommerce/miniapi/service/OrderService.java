@@ -4,6 +4,7 @@ import com.manav.ecommerce.miniapi.model.*;
 import com.manav.ecommerce.miniapi.repository.OrderRepository;
 import com.manav.ecommerce.miniapi.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,9 +16,12 @@ import java.util.List;
 @RequiredArgsConstructor
 public class OrderService {
 
-    private final OrderRepository orderRepository;
-    private final ProductRepository productRepository;
-    private final CartService cartService;
+    @Autowired
+    private OrderRepository orderRepository;
+    @Autowired
+    private ProductRepository productRepository;
+    @Autowired
+    private CartService cartService;
 
     @Transactional
     public Order createOrderFromCart(String userId, String sessionId) {

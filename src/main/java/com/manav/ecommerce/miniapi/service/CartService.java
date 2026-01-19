@@ -2,6 +2,7 @@ package com.manav.ecommerce.miniapi.service;
 
 import com.manav.ecommerce.miniapi.model.CartItem;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,8 @@ import java.util.concurrent.TimeUnit;
 @RequiredArgsConstructor
 public class CartService {
 
-    private final RedisTemplate<String, Object> redisTemplate;
+    @Autowired
+    private RedisTemplate<Object, Object> redisTemplate;
     private static final String CART_PREFIX = "cart:";
     private static final long CART_EXPIRY_DAYS = 7;
 

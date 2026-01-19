@@ -5,6 +5,7 @@ import com.manav.ecommerce.miniapi.model.Product;
 import com.manav.ecommerce.miniapi.repository.CategoryRepository;
 import com.manav.ecommerce.miniapi.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,8 +15,10 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductService {
 
-    private final ProductRepository productRepository;
-    private final CategoryRepository categoryRepository;
+    @Autowired
+    private ProductRepository productRepository;
+    @Autowired
+    private CategoryRepository categoryRepository;
 
     public List<Product> getAllProducts() {
         return productRepository.findAll();
